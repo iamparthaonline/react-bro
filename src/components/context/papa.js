@@ -3,9 +3,12 @@ import Son from "./son";
 
 const Papa = () => {
   return (
-    <div>
+    <React.Fragment>
       papa <Son />
-    </div>
+      {[1, 2, 3, 4].map((n) => (
+        <React.Fragment key={n}>{n}</React.Fragment>
+      ))}
+    </React.Fragment>
   );
 };
 
