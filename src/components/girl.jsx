@@ -5,13 +5,14 @@ const Dating = ({ names }) => {
   const [candidate, setCandidate] = useState("");
 
   const [data, dispatch] = useReducer(reducerFunc, initialArgs);
-
+  const bool = true;
   const girls = useMemo(() => {
     const k = names.find((name) => name.indexOf("k") === 0);
     return k;
   }, [names]);
 
   const inputRef = useRef("hi");
+
   console.log("inputRef", inputRef);
   // what does computed in vue do
 

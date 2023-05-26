@@ -6,11 +6,13 @@ import TextComponent from "./components/text";
 import TodoList from "./components/TodoList";
 import Memo from "./components/memo";
 import Dating from "./components/girl";
-
+import Granny from "./components/context/granny";
 class App extends Component {
   render() {
     return (
       <div>
+        <Granny />
+
         <TodoList />
         {/* <TextComponent /> */}
         {/* <Memo /> */}
