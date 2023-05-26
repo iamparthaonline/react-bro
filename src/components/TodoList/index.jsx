@@ -20,11 +20,11 @@ const TodoList = () => {
 
   useEffect(() => {
     console.log("mount / unmount");
-  }, []);
+  }, []); // [] = dependency array
 
   useEffect(() => {
     console.log("list/val update");
-  }, [list, val]);
+  }, [list, val]); //  [list, val] = dependency array
 
   return (
     <div
